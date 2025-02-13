@@ -1,0 +1,40 @@
+public class Main {
+
+  public static void main(String[] args) {
+
+  Irinco Sname = new Irinco(skills:"Planning", talent:"Sing", height:"160", favColor:"Black");
+  Sname.displayDetails();
+  Sname.displayDetails();    
+  }
+}
+
+public class Irinco {
+  private String skills;
+  private String talent;
+  private int height;
+  public Irinco(String skills, String talent, int height){
+    this.skills = skills;
+    this.talent = talent;
+    this.height = height; 
+  }
+  public void displaydetails(){
+    System.out.println("my skills: " + skills);
+    System.out.println("my talent: " + talent);
+    System.out.println("my height: " + height + "cm");
+  }
+}
+
+public class Rex extends Irinco{
+  
+  private String favColor;
+
+  public Rex(String skills, String talent, int height, String favColor){
+    super(skills, talent, height);
+    this.favcolor = favColor;
+  }
+  @Override
+  public void displayDetails(){
+    super.displayDetails();
+    System.out.println("Favourite Color: " + favColor);
+  }
+  }
