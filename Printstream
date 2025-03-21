@@ -1,0 +1,35 @@
+import java.util.*;
+public class PrintStreamOrder {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Please Enter Your Order");
+        int Order = scan.nextInt();
+
+        while (true) {
+        try {
+            if(Order=="1"){
+                ps.println(Order);
+            }else if(Order=="2"){
+                ps.println(Order);
+            }else if(Order=="3"){
+                ps.println(Order);
+            }else{
+                ps.println(order);
+            }
+
+
+
+            PrintStream ps = new PrintStream(new FileOutputStream("Order.txt",true));
+            ps.println(Order);
+            System.out.println("Order Has been Added");
+            System.out.println("Purchase another order?(y/n): ");
+            int ans = scan.nextInt();
+            if (ans.equals(anObject:"n")) {
+                break;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        } 
+    }
+}
